@@ -133,6 +133,11 @@ body{
 .footer {
     background-color: #0B2545;
     color: #EEF4ED;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-top: 30px;
 }
 .footer_content {
     width: 60%;
@@ -145,4 +150,34 @@ body{
 .footer_content img {
     width: 80px;
 }
-
+h1 {
+    font-size: 30px;
+    font-family: "Poppins-Semi-Bold";
+    letter-spacing: 3px;
+}
+.comany_info h3 {
+    font-family: "Poppins-Semi-Bold";
+    font-size: 20px;
+    margin-top: 50px;
+}
+.company_info li {
+    font-family: "Poppins-Light";
+    font-size: 15px;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.aszf_at {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 50px;
+}
+.aszf_at a {
+    font-family: "Poppins-Thin";;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
