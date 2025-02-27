@@ -1,0 +1,10 @@
+.carousel-caption h3 {
+    width: 70%;
+    letter-spacing: 3px;
+    backdrop-filter: blur(50px);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.person {
+    width: 15%;
+}
