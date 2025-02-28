@@ -8,3 +8,6 @@
 .person {
     width: 15%;
 }
+#customers .carousel-item p {
+    width:50%
+}
