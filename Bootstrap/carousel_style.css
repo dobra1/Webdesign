@@ -28,3 +28,27 @@
 .popular_modells h3 {
     letter-spacing: 2px;
 }
+.first_customer_services img {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+.first_customer_services h4 {
+    backdrop-filter:  blur(40px);
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    letter-spacing: 3px;
+    color: white;
+    border-bottom: 3px solid white;
+    padding: 5px 20px;
+}
+.service-button {
+    --bs-btn-font-size: 1.1rem !important;
+    transition: font-size 0.2s linear !important;
+    box-shadow: 0px 0px 10px black;
+}
+.service-button:hover {
+   font-size: 20px;
+}
+.service-left {
+    transform: perspective(500px) rotateY(15deg) ;
+}

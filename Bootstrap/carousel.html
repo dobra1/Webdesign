@@ -281,6 +281,52 @@
     </div>
         </div>
     </div>
+    <h2 class="text-center my-5">Első ügyfélként vegye igénybe alábbi szolgáltatásainkat!</h2>
+    <div class="container first_customer_services">
+        <div class="row row-gap-4">
+            <div class="col-10 col-md-7 col-lg-4 mx-auto position-relative">
+                <div class="service-left">
+                    <img src="assets/lake.png" class="img-fluid" alt="Visszahivás">
+                    <h4 class="position-absolute top-0 start-50 translate-middle-x">Visszahívás</h4>
+                    <button type="button" class="btn btn-light position-sticky start-50 translate-middle service-button" data-bs-toggle="modal" data-bs-target="#callback">Kérem a visszahívást</button>
+                </div>
+                <div class="modal fade" id="callback" tabindex="-1" aria-labelledby="callback" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="callback">Jelentkezés visszahivásra</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form">
+                                    <div class="form-group">
+                                        <label for="lastname">Vezetéknév</label>
+                                        <input type="text" class="form-control mt-2 mb-4" id="lastname" aria-describedby="lastname" placeholder="Vezetéknév">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="firstname">Keresztnév</label>
+                                        <input type="text" class="form-control mt-2 mb-4" id="firstname" aria-describedby="firstname" placeholder="Keresztnév">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Telefonszám</label>
+                                        <input type="text" class="form-control mt-2 mb-4" id="phone" aria-describedby="phone" placeholder="Telefonszám">
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="at-check">
+                                        <label for="at-check" class="form-check-label">Elfogadom az <a data-bs-toggle="modal" href="#at">Adatkezelési Tájékoztatót</a></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezárás</button>
+                                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#callback_success">Jelentkezek</button>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
