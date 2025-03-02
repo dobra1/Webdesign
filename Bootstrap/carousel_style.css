@@ -49,6 +49,12 @@
 .service-button:hover {
    font-size: 20px;
 }
-.service-left {
-    transform: perspective(500px) rotateY(15deg) ;
+@media(min-width:992px) {
+    .service-left {
+        transform: perspective(500px) rotateY(15deg) ;
+    }
+    .service-right {
+        transform: perspective(500px) rotateY(-15deg) ;
+    }
+    
 }
