@@ -58,3 +58,110 @@
     }
     
 }
+.ferrari-logo {
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 20px;
+}
+.img-border {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px grey;
+}
+.ferrari-title {
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border-radius: 0px 20px 20px 0px ;
+    box-shadow: 0px 0px 10px grey;
+}
+.lamborghini-logo {
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 20px;
+}
+
+.lamborghini-title {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 10px grey;
+}
+.bentley-title {
+    background-color: grey;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border-radius: 0px 20px 20px 0px ;
+    box-shadow: 0px 0px 10px grey;
+}
+.bentley-logo, .porche-logo {
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 20px;
+}
+.rolls-royce-logo, .mercedes-logo {
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 20px;
+}
+.rolls-royce-title {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 10px grey;
+}
+.porche-title {
+    background-color: yellow;
+    color: black;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border-radius: 0px 20px 20px 0px ;
+    box-shadow: 0px 0px 10px grey;
+}
+.mercedes-title {
+    background-color: lightblue;
+    color: black;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 10px grey;
+}
+.elem {
+    margin-bottom: 80px;
+}
+.all_modells button {
+    box-shadow: 0px 0px 10px grey;
+}
+@media (max-width: 991px) {
+    div.title-dropdown {
+        top: 100% !important;
+        left: 50% !important;
+        display: grid;
+        justify-items: center;
+        width: 100%;
+    }
+    .title-dropdown h4 {
+        border-radius: 15px;
+        font-size: 15px;
+    }
+    .dropdown-menu {
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+    }
+    .ferrari {
+        z-index: 6;
+    }
+    .lamborghini {
+        z-index: 5;
+    }
+    .bentley {
+        z-index: 4;
+    }
+    .rolls-royce {
+        z-index: 3;
+    }
+    .porche {
+        z-index: 2;
+    }
+ }
