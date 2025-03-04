@@ -1,0 +1,91 @@
+@font-face {
+    font-family: Lato-Black;
+    src: url(/fonts/Lato-Black.woff2);
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-Bold;
+    src: url(/fonts/Lato-Bold.woff2);
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: Lato-Regular;
+    src: url(/fonts/Lato-Regular.woff2);
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+.navbar {
+    background-color: #324D3E;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.navbar img {
+    width: 190px;
+    height: 60px;
+}
+.navbar ul {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 20px;
+    padding-top: 10px;
+}
+.navbar li {
+    list-style-type: none;
+    padding: 0px 20px;
+}
+.navbar a {
+    font-family: Lato-Regular;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.underline a {
+    position: relative;
+    text-decoration: none;
+}
+
+.underline.active a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px; 
+    width: 100%;
+    height: 2px; 
+    background-color: #FFFFFF;
+}
+
+
+.nav_button {
+    background-color: #FFF95A;
+    color: black!important;
+    padding: 10px 30px;
+    transition: background-color 0.2s linear;
+    border-radius: 5px;
+}
+.nav_button:hover {
+    background-color: #8Ba9c4;
+    color: #0B2545!important;
+    font-weight: bold;
+}
+.underline:after {
+    width: 0%;
+    height: 3px;
+    margin: auto;
+    display: block;
+    content: '';
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+.underline:hover::after {
+    width: 100%;
+    background-color: #0B2545;
+}
