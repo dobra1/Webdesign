@@ -703,7 +703,7 @@
 <div tse class="container container-form">
     <h2 class="text-center mb-4">Értékesítse nálunk jelenlegi autóját, vagy számítsa be egy új modell vásárlásába!</h2>
     <p class="text-center lead">Amennyiben cserélni kívánja autóját, töltse ki az alábbi egyperces űrlapot és felvesszük Önnel a kapcsolatot.</p>
-    <div class="row justify-content-center form-ing my-4">
+    <div class="row justify-content-center form-img my-4">
         <form class="col-md-8 col-lg-7 col-xl-5 mx-auto px-4 pb-4 my-3 myform">
             <h4 class="text-center my-3">Tulajdonos elérhetősége</h4>
             <div class="form-group row my-3">
@@ -752,11 +752,65 @@
             </div>
             <div class="form-group my-4">
                 <h5 class="text-center">Autó állapota</h5>
+                <div class="row">
+                    <span class="col">0</span>
+                    <span class="col text-center">5</span>
+                    <span class="col text-end">10</span>
+                </div>
+                <input type="range" id="carCondition" class="form-control-range d-block w-100" min="0" max="10" aria-describedby="rangeHelp" required>
+                <small id="rangeHelp" class="form-text text-muted">Kérem értékelje az autó állapotát 1-től 10-ig!</small>
             </div>
+            <div class="form-group row my-4 justify-content-evenly">
+                <div class="col-auto">
+                    <input type="radio" class="form-check-input" name="sellOffset" id="sell" value="értékesít">
+                    <label for="sell" class="form-check-label">Étemrtékesít</label>
+                </div>
+                <div class="col-auto">
+                    <input type="radio" class="form-check-input" name="sellOffset" id="offset" value="beszámít">
+                    <label for="offset" class="form-check-label">Beszámítom</label>
+                </div>
+            </div>
+            <div class="row my-3 justify-content-center">
+                <div class="form-group col-auto">
+                    <input type="checkbox" id="at" class="form-check-input" required>
+                    <label for="at" class="form-check-label">Elfogadom az <a data-bs-toggle="modal" href="#at_car_purchase">Adatkezelési Tájékoztatót</a></label>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+            <button type="submit" class="btn btn-success col-auto px-4">Küldés</button>
+            </div>    
         </form>
+        <div class="col-10 col-lg-7 align-content-center mx-auto">
+            <img src="assets/car_rental.png" class="w-100 purchase-car" alt="Autó vásárlás">
+        </div>
+    </div>
+    <div class="modal fade" id="at_car_purchase" tabindex="-1" aria-labelledby="at_car_purchase" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5">Adatkezelési tájékoztató</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>Alcim 1</h5>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    
+                    <h5>Alcim 2</h5>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    
+                    <h5>Alcim 3</h5>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                    
+                    <h5>Alcim 4</h5>
+                    <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary mx-auto" type="button" data-bs-dismiss="modal">Bezárás</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-     
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
