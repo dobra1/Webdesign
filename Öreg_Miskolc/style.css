@@ -1,3 +1,6 @@
+body{
+    margin: 0;
+}
 @font-face {
     font-family: Lato-Black;
     src: url(/fonts/Lato-Black.woff2);
@@ -19,34 +22,57 @@
     font-style: normal;
     font-display: swap;
 }
-
+.topbar {
+    background-color: #FFFFFF;
+}
+.topbar span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 10px;
+    margin: 0px;
+    padding: 5px;
+}
+.topbar span i {
+    padding: 5px 5px;
+}
 .navbar {
     background-color: #324D3E;
     display: flex;
     justify-content: center;
-    align-items:center;
+    flex-wrap: wrap;
+    text-align:center;
 }
-.navbar img {
+.logo img {
     width: 190px;
     height: 60px;
 }
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .navbar ul {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     row-gap: 20px;
-    padding-top: 10px;
+    column-gap: 30px;
+    padding: 10px 10px;
+   
 }
 .navbar li {
     list-style-type: none;
-    padding: 0px 20px;
+    margin: 5px 0px;
 }
 .navbar a {
-    font-family: Lato-Regular;
+    font-family: "Lato-Regular";
     font-size: 18px;
     color: #FFFFFF;
     text-decoration: none;
+    
 }
 .underline a {
     position: relative;
@@ -62,7 +88,6 @@
     height: 2px; 
     background-color: #FFFFFF;
 }
-
 
 .nav_button {
     background-color: #FFF95A;
@@ -88,4 +113,89 @@
 .underline:hover::after {
     width: 100%;
     background-color: #0B2545;
+}
+.main-section {
+    background-image: url(assets/Group\ 395.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    row-gap: 40px;
+    column-gap: 50px;
+    padding-top: 327px;
+    padding-left: 300px;
+    padding-bottom: 196px;
+}
+.main-text {
+    width: 565px;
+}
+.main-text h1 { 
+    font-family: "Lato-Black";
+    font-size: 60px;
+    color: #FFFFFF;
+    padding: 0px 20px;
+}
+.main-text p {
+    font-family: 'Lato-Regular';
+    font-size: 18px;
+    color: #FFFFFF;
+
+    padding: 0px 20px ;
+}
+.main-section button {
+    font-family: "Lato-Regular";
+    font-size: 18px;
+    width: 150px;
+    height: 49px;
+    border-radius: 5px;
+    padding: 0px 20px ;
+    margin: 0px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-content: center;
+}
+.main-section button i {
+    padding: 5px;
+}
+.room-section {
+    background-color: white;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 50px; 
+    flex-wrap: wrap; 
+    padding: 66px 30px;
+    
+}
+.room-text {
+    width: 615px;
+    margin-bottom: 66px;
+}
+.room-section h1 {
+    font-family: "Lato-Black";
+    font-size: 43px;
+    color: #323232;
+}
+.room-section p {
+    font-family: "Lato-Regular";
+    font-size: 18px;
+    color: #323232;
+}
+.room-section button {
+    font-family: "Lato-Regular";
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 152px;
+    height: 49px;
+    background-color: #324d3e;
+    border-radius: 5px;
+}
+.room-img {
+    margin-bottom: 66px;
+}
+.room-img img {
+    width: 623px; 
+    height: 436px;
+    border-top-right-radius: 150px;
+    border: 3px solid white;
 }
