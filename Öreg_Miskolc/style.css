@@ -218,8 +218,43 @@ body{
     font-size: 43px;
 }
 .model {
-    border-radius: 20px;
-    box-shadow: 0px 0px 30px #0077b6;
+    background-color: #FFFFFF;
+    height: 383px;
+    width: 320px;
+}
+.model h3 {
+    font-family: "Lato-Black";
+    font-size: 32px;
+    color: #323232;
+   
+}
+.model p {
+    font-family: "Lato-Regular";
+    font-size: 18px;
+    color: #323232;
+}
+.model img {
+    background-color: #324d3e;
+    height: 123px;
+    width: 115px;
+    border-bottom-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    padding: 10px 10px;
+}
+.restaurant .box img {
+    max-width: 80%;  
+    height: auto;    
+}
+.img-text-container img, .img-text-container p {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 0px;
+    font-size: 18px;
+    font-family: "Lato-Regular";
 }
 
+.img-text-container img {
+    margin-right: 10px;
+    padding-bottom: 15px;
+}
 
