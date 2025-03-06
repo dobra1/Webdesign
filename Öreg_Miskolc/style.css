@@ -28,14 +28,15 @@ body{
 .topbar span {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     row-gap: 10px;
-    margin: 0px;
+    margin: 0px 0px;
     padding: 5px;
 }
 .topbar span i {
-    padding: 5px 5px;
+    padding: 5px 25px;
 }
+
 .navbar {
     background-color: #324D3E;
     display: flex;
@@ -51,21 +52,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .navbar ul {
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     row-gap: 20px;
-    column-gap: 30px;
-    padding: 10px 10px;
+    column-gap: 10px;
+    padding: 10px 20px;
+    margin: 10px auto;
    
 }
 .navbar li {
     list-style-type: none;
-    margin: 5px 0px;
+    margin: 0px 0px;
 }
 .navbar a {
     font-family: "Lato-Regular";
@@ -161,29 +164,29 @@ body{
     height: 16px;
 }
 
-.container-room {
+.rooms {
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 20px; 
-    padding: 40px;
-    max-width: 600px;
+    padding: 20px;
+    max-width: 670px;
 }
 
-.container-room h1 {
+.rooms h1 {
     font-family: "Lato-Black";
     font-size: 36px;
     color: #323232;
 }
 
-.container-room p {
+.rooms p {
     font-family: "Lato-Regular";
     font-size: 18px;
     color: #323232;
 }
 
-.container-room button {
+.rooms button {
     font-family: "Lato-Regular";
     font-size: 18px;
     color: #FFFFFF;
@@ -194,10 +197,29 @@ body{
     border: none;
     cursor: pointer;
 }
-
-.container-room-img img {
-    width: 100%;
-    height: 400px;
+.rooms-carousel {
     border-top-right-radius: 150px;
-    border: 3px solid white;
+    height: 436px;
 }
+.img-row img {
+    width: 300px;
+    height: 100%;
+}
+.img-row {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;  
+    justify-content: center;
+    row-gap: 20px; 
+    column-gap: 20px;
+}
+.section_3 {
+    font-family: "Lato-Black";
+    font-size: 43px;
+}
+.model {
+    border-radius: 20px;
+    box-shadow: 0px 0px 30px #0077b6;
+}
+
+
