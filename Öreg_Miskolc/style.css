@@ -1,5 +1,7 @@
-body{
+html, body{
     margin: 0;
+    background-color: #f7f7f7!important;
+
 }
 @font-face {
     font-family: Lato-Black;
@@ -237,7 +239,10 @@ body{
     opacity: 1;
     padding: 25px;
 }
-
+.restaurant{
+    background-color: #FFFFFF;
+    border-bottom-right-radius: 150px;
+}
 .img-oreg-1 {
     width: 100%; 
     height: auto; 
@@ -289,4 +294,9 @@ body{
 .price p {
     margin: 0;
     font-size: 16px;
+}
+.hotel1-button button {
+    color: #323232;
+    border-radius: 5px;
+    padding: 10px 10px;
 }
