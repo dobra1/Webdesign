@@ -406,7 +406,7 @@ body {
   min-height: 100vh;
 }
 #parking-1 {
-  max-width: 623px;
+  min-width: 623px;
   width: 100%;
   height: 530px;
   border: 10px solid #ffffff;
@@ -415,8 +415,8 @@ body {
 }
 
 #parking-2 {
-  max-width: 623px;
-  width: 100%;
+  width: 623px;
+
   height: 530px;
   border: 10px solid #ffffff;
   border-top-right-radius: 150px;
@@ -439,15 +439,16 @@ body {
 
 .parking-box {
   height: 435px;
-  width: 774px;
-  max-width: 100%;
   background-color: #ffffff;
   border-bottom-right-radius: 50px;
 }
 .parking-box h2 {
   font-family: "Lato-Black";
   font-size: 43px;
-  margin: 50px 20px;
+  margin-top: 114px;
+  margin-left: 50px;
+  margin-bottom: 26px;
+  margin-right: 2px;
 }
 .parking-box p {
   font-family: "Lato-Regular";
@@ -457,8 +458,6 @@ body {
 }
 
 .parking-box-2 {
-  height: 435px;
-  width: 772px;
   background-color: #ffffff;
   border-top-left-radius: 50px;
 }
