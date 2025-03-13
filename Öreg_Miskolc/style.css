@@ -373,14 +373,18 @@ body {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
+  padding: 10px 0px;
+  margin: 20px 0px;
 }
 .restaurant2-icon {
   padding: 10px;
 }
 
 .restaurant2 img {
-  width: 623px;
-  height: 615px;
+  max-width: 623px;
+  width: 100%;
+  min-height: 615px;
+  height: 100%;
   border-bottom-right-radius: 150px;
   margin-top: 60px;
 }
@@ -408,37 +412,53 @@ body {
 #parking-1 {
   min-width: 623px;
   width: 100%;
-  height: 530px;
+  min-height: 530px;
+  height: 100%;
   border: 10px solid #ffffff;
   border-top-left-radius: 150px;
   object-fit: cover;
 }
 
 #parking-2 {
-  width: 623px;
-
-  height: 530px;
+  margin-left: -60px;
+  min-width: 623px;
+  width: 100%;
+  min-height: 530px;
+  height: 100%;
   border: 10px solid #ffffff;
   border-top-right-radius: 150px;
   object-fit: cover;
 }
 @media (max-width: 991px) {
-  div.parking-box,
-  div.parking-box-2 {
+  .parking-box,
+  .parking-box-2 {
     top: 100% !important;
-    left: 45% !important;
-    display: grid;
-    justify-items: center;
-    max-width: 90%;
-    height: auto;
-    flex-wrap: wrap;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    left: 50% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+  #parkin-1,
+  #parking-2 {
+    margin: 0px;
+  }
+  .parking-box h2,
+  .parking-box-2 h2 {
+    text-align: center;
+  }
+  .parking-box p,
+  .parking-box-2 p {
+    text-align: center;
   }
 }
 
 .parking-box {
-  height: 435px;
+  min-width: 672px;
+  width: 100%;
+  max-height: 435px;
+  height: 80%;
   background-color: #ffffff;
   border-bottom-right-radius: 50px;
 }
@@ -453,11 +473,16 @@ body {
 .parking-box p {
   font-family: "Lato-Regular";
   font-size: 18px;
-  padding: 10px 20px;
+  margin: 26px 50px;
+  margin-bottom: 116px;
   color: #323232;
 }
 
 .parking-box-2 {
+  max-width: 772px;
+  width: 100%;
+  max-height: 435px;
+  height: 80%;
   background-color: #ffffff;
   border-top-left-radius: 50px;
 }
@@ -510,4 +535,22 @@ h5 {
   font-size: 18px;
   margin-top: 30px;
   padding: 0px 15px;
+}
+.hotel-gallery {
+  background-image: url("assets/Group\ 401.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.gallery-title {
+  font-family: "Lato-Black";
+  font-size: 43px;
+  color: #ffffff;
+}
+.gallery img {
+  max-width: 431px;
+  width: 100%;
+  max-height: 301px;
+  height: auto;
+  border: 10px solid #ffffff;
 }
