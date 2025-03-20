@@ -433,7 +433,7 @@ body {
   .parking-box,
   .parking-box-2 {
     top: 100% !important;
-    left: 50% !important;
+    left: 40% !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -553,4 +553,155 @@ h5 {
   max-height: 301px;
   height: auto;
   border: 10px solid #ffffff;
+}
+.cave img {
+  border-top-left-radius: 150px;
+}
+.custom-carousel-icon-right {
+  background-color: rgb(108, 90, 90) !important;
+  margin-left: 100px;
+}
+.custom-carousel-icon-left {
+  background-color: rgb(108, 90, 90) !important;
+  margin-right: 100px;
+  padding: 5px 5px;
+}
+.details {
+  background-color: white;
+  padding: 20px 10px;
+  border-top-right-radius: 50px;
+}
+.details h2 {
+  font-family: "Lato-Black";
+  font-size: 43px;
+  color: #323232;
+  line-height: 50px;
+  padding: 5px 20px;
+}
+.details button {
+  margin-top: 40px;
+  padding: 10px;
+  background-color: #324d3e;
+  color: white;
+  border-radius: 5px;
+}
+.cave {
+  background-color: #f7f7f7;
+}
+.attractions {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #323232;
+  line-height: 22px;
+  padding: 5px 20px;
+}
+.cave p {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #323232;
+  line-height: 28px;
+  padding: 5px 20px;
+}
+.carousel-item .row .col-lg-6 {
+  margin: 0;
+  padding: 0;
+}
+.contact {
+  background-image: linear-gradient(#324d3e 10%, rgba(0, 0, 0, 0.223)),
+    url("assets/contact.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact-box {
+  background-color: white;
+  height: 577px;
+  width: 409px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 30px;
+}
+.contact-box h2 {
+  font-family: "Lato-Black";
+  font-size: 43px;
+  line-height: 50px;
+  padding: 10px 5px;
+}
+.contact-box p {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  line-height: 28px;
+  width: 324px;
+
+  padding: 10px 5px;
+}
+.contact-box button {
+  background-color: #324d3e;
+  border-radius: 5px;
+  height: 49px;
+  padding: 0px 40px;
+  margin: 10px 5px;
+  color: white;
+}
+.container-footer-1 {
+  background-color: white;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer img {
+  height: 60px;
+}
+.footer ul {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  row-gap: 10px;
+  padding: 0;
+  padding-top: 20px;
+}
+.footer li {
+  list-style: none;
+  padding: 5px 10px;
+}
+.footer a {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  line-height: 28px;
+  color: #323232;
+}
+.logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.logos img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+.footer-2 {
+  background-color: #324d3e;
+
+  padding: 10px;
+  border-radius: 5px;
+}
+.footer-2 .col-auto {
+  font-family: "Lato-Regular";
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 0px 10px;
+}
+.container-copyright p {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #323232;
+  line-height: 28px;
 }
