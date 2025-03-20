@@ -367,24 +367,31 @@ body {
   font-family: "Lato-Black";
   font-size: 43px;
   color: #323232;
-  margin-top: 86px;
+  line-height: 50px;
+  padding: 0px 10px;
 }
 .restaurant2 p {
   font-family: "Lato-Regular";
   font-size: 18px;
   color: #323232;
-  padding: 10px 0px;
-  margin: 20px 0px;
+  padding: 10px 10px;
+  line-height: 28px;
 }
-.restaurant2-icon {
-  padding: 10px;
+.row-icon i {
+  width: 48px !important;
+  height: 22px !important;
+  padding: 20px 10px;
+}
+.icon-text {
+  font-family: "Lato-Bold";
+  font-size: 18px;
+  color: #323232;
+  line-height: 28px;
 }
 
 .restaurant2 img {
-  max-width: 623px;
-  width: 100%;
-  min-height: 615px;
-  height: 100%;
+  width: 623px;
+  height: 615px;
   border-bottom-right-radius: 150px;
   margin-top: 60px;
 }
@@ -393,7 +400,8 @@ body {
   background-color: #324d3e;
   border-radius: 5px;
   font-size: 18px;
-
+  padding: 10px 10px;
+  margin-left: 20px;
   color: #ffffff;
 }
 .menu-btn {
@@ -402,6 +410,8 @@ body {
   border-radius: 5px;
   border-color: 1px #323232;
   font-size: 18px;
+  padding: 10px 0px;
+  margin-left: 30px;
 }
 .hotel-facilities1 {
   background-image: url("assets/Group\ 398@2x.png");
