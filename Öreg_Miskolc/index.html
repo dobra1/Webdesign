@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <!--
     <div class="topbar">
         <div class="container">
             <div class="row text-center align-items-center column-gap-4">
@@ -36,13 +37,31 @@
             </div>
         </div>
    </div>
-    
+    -->
+    <div class="topbar">
+        <ul>
+            <li><a href="#"><i class="fas fa-phone-alt"></i> +36 30 237 7774</a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i> hotel&#64;oregmiskolcz.hu</a></li>
+            <li><a href="#"><i class="fa-solid fa-location-dot"></i> 3525 Miskolc Horváth Lajos 11</a></li>
+        </ul>
+        <div class="logo2">
+            <button class="btn dropdown-toggle border-0" type="button" data-bs-toggle="dropdown">
+                <img src="assets/hungary.png" alt="Magyar címer">
+                HU
+            </button>
+            <ol class="dropdown-menu dropend">
+                <li><a class="dropdown-item" href="#">Magyar</a></li>
+                <li><a class="dropdown-item" href="#">Angol</a></li>
+            </ol>
+        </div>
+    </div>
+
     <div class="navbar">
         <div class="logo">
             <img src="assets/ÖM logo 2019_w.png" alt="Logo">
         </div>
         <ul>
-            <li class="underline active"><a href="#">Főoldal</a></li>
+            <li class="main-page"><a href="#">Főoldal</a></li>
             <li><a href="#">Szobák</a></li>
             <li><a href="#">Étterem</a></li>
             <li><a href="#">Szaunapark</a></li>
@@ -110,12 +129,12 @@
                 </div>
             </div>
        
-            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev" >
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev" style="left: -120px;">
+                <i class="fa-solid fa-arrow-left" style="color: #ffffff; font-size: 24px;"></i>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next" style="right: -120px;">
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff; font-size: 24px;"></i>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
@@ -124,17 +143,17 @@
     <div class="container py-5 justify-content-center">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-6">
-                <div class="rooms">
+                <div class="rooms p-2">
                     <h2 py-3>Az Öreg Miskolcz Hotel szobái elegánsak és otthonosak, a modern kényelmet és a klasszikus stílust ötvözik</h2>
                     <p>A szobák különböző méretűek és kialakításúak, hogy minden vendég igényét kielégítsék. Mindegyikhez tartozik fürdőszoba, TV, ingyenes Wi-Fi, és néhány szoba exkluzív extra kényelmi szolgáltatásokat is kínál.</p>
                 </div>
-                <button class="col-6 col-md-4 rooms-btn">Tovább <i class="fas fa-arrow-right"></i></button>
+                <button class="col-6 col-md-4 rooms-btn mx-2">Tovább <i class="fas fa-arrow-right"></i></button>
             </div>
     
             <div class="col-lg-6 order-lg-last order-last py-3">
                 <div class="rooms-pictures justify-content-center">
                     <div id="rooms" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                        <div class="carousel-inner">
+                        <div class="carousel-inner px-2">
                             <div class="carousel-item active">
                                 <img src="assets/szoba-1.jpg" alt="Room1" class="img-fluid">
                             </div>
@@ -163,51 +182,50 @@
             </div>
         </div>
     
-        <div class="row row-gap-4 px-0 justify-content-around  mt-4 photos">
-            <div class="col-lg-auto col-md-4">
+        <div class="row row-gap-4  px-0 justify-content-around  mt-4 photos">
+            <div class="col-lg-auto col-md-4 col-6">
                 <img src="assets/szoba-1.jpg" alt="Thumbnail 1" data-bs-target="#rooms" data-bs-slide-to="0">
             </div>
-            <div class="col-lg-auto col-md-6">
+            <div class="col-lg-auto col-md-6 col-6">
                 <img src="assets/szoba-2.jpg" alt="Thumbnail 2" data-bs-target="#rooms" data-bs-slide-to="1">
             </div>
-            <div class="col-lg-auto col-md-4">
+            <div class="col-lg-auto col-md-4 col-6">
                 <img src="assets/szoba-3.jpg" alt="Thumbnail 3" data-bs-target="#rooms" data-bs-slide-to="2">
             </div>
-            <div class="col-lg-auto col-md-6">
+            <div class="col-lg-auto col-md-6 col-6">
                 <img src="assets/szoba-4.jpg" alt="Thumbnail 4" data-bs-target="#rooms" data-bs-slide-to="3">
             </div>
-            <div class="col-lg-auto col-md-6">
+            <div class="col-lg-auto col-md-6 col-6">
                 <img src="assets/szoba-5.jpg" alt="Thumbnail 5" data-bs-target="#rooms" data-bs-slide-to="4">
             </div>
         </div>
     </div>
     
     <div class="my-5" style="background-image: url('assets/Group\ 398@2x.png');">
-        <h1 class="text-center pt-5  hotel1_title">Miért válassz minket?</h1>
+        <h1 class="text-center p-5  hotel1_title">Miért válassz minket?</h1>
         <div class="container logo">
-            <div class="row justify-content-center my-1 " style="column-gap: 10px;">
-                <div class="col-lg-3 col-md-6 col-12 my-5 text-center hotel1">
+            <div class="row justify-content-center pb-5 gap-2">
+                <div class="col-lg col-md-8 col-10 text-center hotel1">
                     <img src="assets/Group 230@2x.png" alt="Belvárosi elhelyezkedés">
                     <h3>Belvárosi elhelyezkedés</h3>
-                    <p class="p-3">Miskolc szívében várjuk vendégeinket, könnyen megközelíthető helyszínnel.
-                    </p>
+                    <p>Miskolc szívében várjuk vendégeinket, könnyen megközelíthető helyszínnel.</p>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12 my-5 text-center hotel1">
+                <div class="col-lg col-md-8 col-10 text-center hotel1">
                     <img src="assets/Path 4@2x.png" alt="Belvárosi elhelyezkedés">
                     <h3>Minőségi gasztronómia</h3>
-                    <p class="p-3">Éttermünkben a tradicionális ízek találkoznak a modern konyhatechnológiával.</p>
+                    <p>Éttermünkben a tradicionális ízek találkoznak a modern konyhatechnológiával.</p>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12 my-5 text-center hotel1">
+                <div class="col-lg col-md-8 col-10 text-center hotel1">
                     <img src="assets/Group 256@2x.png" alt="Belvárosi elhelyezkedés">
                     <h3>Saját parkoló</h3>
-                    <p class="p-3">Kényelmes és biztonságos parkolási lehetőséget biztosítunk vendégeink számára.</p>
+                    <p>Kényelmes és biztonságos parkolási lehetőséget biztosítunk vendégeink számára.</p>
                 </div>
 
-                <div class="col-lg-3 col-md-6 col-12 my-5 text-center hotel1">
+                <div class="col-lg col-md-8 col-10 text-center hotel1">
                     <img src="assets/Group 235@2x.png" alt="Belvárosi elhelyezkedés">
                     <h3>Rendezvény- helyszín</h3>
-                    <p class="p-3">Ideális helyszínt kínálunk üzleti és családi események lebonyolításához.</p>
+                    <p>Ideális helyszínt kínálunk üzleti és családi események lebonyolításához.</p>
                 </div>
             </div>
         </div>
@@ -259,25 +277,36 @@
             </div>
         </div>
     </div>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center p-3">
         <button class="hotel1-button text-center">További ajánlatok <i class="fas fa-arrow-right"></i></button>
     </div>
     </div>
 
     <div class="p-4 hotel-sauna" style="background-image: url('assets/Group\ 398@2x.png');">
-        <div class="container my-5">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="box mx-4">
+                    <div class="box align-items-center">
                         <h2>Szauna park</h2>
+                        
                         <p>Szauna részlegünk a szálloda alagsorában várja vendégeinket, ahol finn és infraszauna
                             valamint hideg vizes merülő medence gondoskodik a teljes felfrissülésről.</p>
-                        <p><i class="fa-solid fa-circle-check" style="color: #becfbd;"></i> Nyitvatartás: minden nap
-                            16:00-22:00</p>
-                        <p><i class="fa-solid fa-circle-check" style="color: #becfbd;"></i> Szállóvendégeink számára
-                            ingyenes, külsős vendégeink számára a belépő ára 3.500 Ft.</p>
-                        <p><i class="fa-solid fa-circle-check" style="color: #becfbd;"></i> Kedvezményes szaunabérlet
-                            elérhető a recepción!</p>
+                        
+                            <div class="sauna-item">
+                                <i class="fa-solid fa-circle-check" style="color: #becfbd;"></i>
+                                <p>Nyitvatartás: minden nap 16:00-22:00</p>
+                            </div>
+                            
+                            <div class="sauna-item">
+                                <i class="fa-solid fa-circle-check" style="color: #becfbd;"></i>
+                                <p>Szállóvendégeink számára ingyenes, külsős vendégeink számára a belépő ára 3.500 Ft.</p>
+                            </div>
+                            
+                            <div class="sauna-item">
+                                <i class="fa-solid fa-circle-check" style="color: #becfbd;"></i>
+                                <p>Kedvezményes szaunabérlet elérhető a recepción!</p>
+                            </div>
+                            
                         <button class="sauna-button col-6 text-center">Tovább <i
                                 class="fas fa-arrow-right"></i></button>
                     </div>
@@ -322,6 +351,14 @@
                                             Öreg Miskolcz Hotelben!</p>
                                     </div>
                                 </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#caves" data-bs-slide="prev" style="left: -80px;">
+                                    <i class="fa-solid fa-arrow-left" style="color: #ffffff; font-size: 24px;"></i>                    
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#caves" data-bs-slide="next" style="right: -60px;">
+                                    <i class="fa-solid fa-arrow-right" style="color: #ffffff; font-size: 24px;"></i>
+                                    <span class="visually-hidden">Next</span>
+                                </button>           
                             </div>
                         </div>
                     </div>
@@ -329,6 +366,7 @@
             </div>
         </div>
     </div>
+    
 
     <div class="container restaurant2 py-3">
         <div class="row align-items-center">
