@@ -261,70 +261,98 @@ body {
 .restaurant {
   background-color: #ffffff;
   border-bottom-right-radius: 150px;
-  height: auto;
-  min-height: 406px;
 }
-.img-oreg-1 {
-  width: 100%;
-  height: auto;
-  min-height: 406px;
-  object-fit: cover;
+.restaurant img {
+  width: 377px;
+  height: 406px;
   border-top-left-radius: 50px;
 }
-
-.hotel-info h2 {
+.restaurant h2 {
   font-family: "Lato-Black";
+  font-size: 43px;
+  white-space: nowrap;
+  padding-top: 20px;
 }
-
-.hotel-info p {
+.restaurant p {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #323232;
+}
+.second-title {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #324d3e;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin: 0;
+}
+.hotel-item {
+  display: flex;
+  align-items: start;
   font-family: "Lato-Regular";
   font-size: 18px;
 }
-
-.hotel-info-right {
-  display: flex;
-  gap: 0px;
-  flex-wrap: wrap;
-  margin-top: 80px;
-  margin-right: 20px;
+.hotel-item i {
+  margin-top: 7px;
 }
-.hotel-info-right p {
+.hotel-item p {
   font-family: "Lato-Regular";
   font-size: 18px;
+  margin: 0px 10px;
+  line-height: 28px;
+  margin-right: 40px;
 }
-.price-container {
-  display: flex;
-  flex-direction: column;
-}
-.price {
+
+.hotel-item-last {
   display: flex;
   align-items: center;
+  font-family: "Lato-Regular";
+  font-size: 18px;
 }
-
-.price h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 0;
+.hotel-item-last i {
+  margin-top: 7px;
 }
-
-.price p {
-  margin: 0;
-  font-size: 16px;
+.hotel-item-last p {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  margin: 0px 10px;
+  line-height: 28px;
+  margin-right: 40px;
 }
-.hotel1-button {
+.restaurant .hotel-item2 {
+  font-family: "Lato-Black";
+  font-size: 32px;
   color: #323232;
-  border-color: 1px #323232;
+}
+.restaurant .hotel-item1 {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #323232;
+  margin-bottom: 0px;
+}
+.price-details {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #323232;
+}
+.restaurant button {
+  background-color: #324d3e;
+  color: white;
   border-radius: 5px;
   padding: 10px 10px;
-  margin-top: 40px;
-  min-width: 231px;
+  width: 154px;
   height: 49px;
   font-family: "Lato-Regular";
   font-size: 18px;
+  margin-top: 40px;
 }
-.box p {
-  max-width: 95%;
-  overflow: visible !important;
+.package-btn {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  width: 230px;
+  height: 49px;
+  border-radius: 5px;
+  color: #323232;
 }
 .sauna-item {
   display: flex;
