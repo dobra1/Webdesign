@@ -225,6 +225,7 @@ body {
   width: 240px;
   height: 182px;
   padding: 0px 5px;
+  object-fit: cover;
 }
 .hotel1 {
   width: 320px;
@@ -305,12 +306,13 @@ body {
 
 .hotel-item-last {
   display: flex;
-  align-items: center;
+  align-items: start;
   font-family: "Lato-Regular";
   font-size: 18px;
 }
 .hotel-item-last i {
   margin-top: 7px;
+  padding: 5px 5px;
 }
 .hotel-item-last p {
   font-family: "Lato-Regular";
@@ -357,8 +359,19 @@ body {
 .sauna-item {
   display: flex;
   align-items: start;
-  gap: 5px;
-  padding-top: 20px 0px;
+}
+.sauna-item i {
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+.sauna-item p {
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+  width: 510px;
+  padding: 0px 5px;
 }
 
 .hotel-sauna h2 {
@@ -377,12 +390,11 @@ body {
   font-size: 18px;
   color: #323232;
   background-color: white;
-  width: 151px !important;
+  width: 151px;
   height: 49px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  margin: 30px 0px;
 }
 
 .carousel-hotel .carousel-item img {
@@ -440,8 +452,10 @@ body {
 .restaurant2 img {
   width: 623px;
   height: 615px;
+  max-width: 100%;
   border-bottom-right-radius: 150px;
   margin-top: 60px;
+  object-fit: cover;
 }
 .reservation-btn {
   font-family: "Lato-Regular";
@@ -467,16 +481,37 @@ body {
   background-position: center;
   min-height: 100vh;
 }
-#parking-1 {
-  min-width: 623px;
-  width: 100%;
-  min-height: 530px;
-  height: 100%;
+
+.hotel-facilities1 img {
+  width: 623px;
+  height: 530px;
   border: 10px solid #ffffff;
   border-top-left-radius: 150px;
   object-fit: cover;
 }
+.hotel-facilities1 .row {
+  margin: 0;
+}
+.hotel-facilities1 .row .col-lg-6 {
+  padding: 0;
+}
+.description {
+  width: 772px;
+  height: 435px;
+  background-color: #ffffff;
+  border-bottom-right-radius: 50px;
+}
+.description h2 {
+  font-family: "Lato-Black";
+  font-size: 43px;
+}
+.description p {
+  font-family: "Lato-Regular";
+  font-size: 18px;
+  color: #323232;
+}
 
+/*
 #parking-2 {
   margin-left: -60px;
   min-width: 623px;
@@ -559,6 +594,8 @@ body {
   margin-bottom: 116px;
   color: #323232;
 }
+
+*/
 .weekly-menu {
   border: 1px solid #323232;
 }
@@ -572,6 +609,7 @@ body {
 .fishing img {
   width: 90px;
   height: 90px;
+  object-fit: cover;
 }
 .menu-box {
   background-color: #324d3e;
