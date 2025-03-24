@@ -211,7 +211,7 @@ body {
   background-color: #324d3e;
   color: white;
   border-radius: 5px;
-  padding: 5px 0px;
+  padding: 10px 10px;
   width: 50%;
   max-width: 130px;
 }
@@ -491,7 +491,7 @@ body {
 }
 
 #parking-2 img {
-  width: 623px;
+  width: 523px;
   height: 530px;
   border: 10px solid #ffffff;
   border-top-right-radius: 150px;
@@ -532,7 +532,7 @@ body {
 }
 
 .description-2 {
-  width: 774px;
+  width: 784px;
   height: 435px;
   background-color: #ffffff;
   border-bottom-left-radius: 50px;
